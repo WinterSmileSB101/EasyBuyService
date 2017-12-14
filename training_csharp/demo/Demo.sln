@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-01-Basic.Tests", "Demo-01-Basic.Tests\Demo-01-Basic.Tests.csproj", "{30822FA3-96DF-48C5-B057-896EDD96F11D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringTestDemos", "StringTestDemos", "{D431DDAE-88D4-4702-9402-5E9FC1B96815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringMemoryTest", "StringMemoryTest\StringMemoryTest.csproj", "{BDA90940-48D0-409E-9B84-C8900EF97184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C40BCE03-B8DD-481A-9E82-691AC58DA561}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherAssembly", "AnotherAssembly\AnotherAssembly.csproj", "{F1F9504A-3B6F-493E-876E-B7189BBCA083}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30822FA3-96DF-48C5-B057-896EDD96F11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30822FA3-96DF-48C5-B057-896EDD96F11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30822FA3-96DF-48C5-B057-896EDD96F11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30822FA3-96DF-48C5-B057-896EDD96F11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA90940-48D0-409E-9B84-C8900EF97184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA90940-48D0-409E-9B84-C8900EF97184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA90940-48D0-409E-9B84-C8900EF97184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA90940-48D0-409E-9B84-C8900EF97184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F9504A-3B6F-493E-876E-B7189BBCA083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F9504A-3B6F-493E-876E-B7189BBCA083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F9504A-3B6F-493E-876E-B7189BBCA083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F9504A-3B6F-493E-876E-B7189BBCA083}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDA90940-48D0-409E-9B84-C8900EF97184} = {D431DDAE-88D4-4702-9402-5E9FC1B96815}
+	EndGlobalSection
+EndGlobal
