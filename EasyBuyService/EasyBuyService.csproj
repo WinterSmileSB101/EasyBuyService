@@ -179,9 +179,16 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataAccess\Helper\ISqlHelper.cs" />
+    <Compile Include="DataAccess\Helper\SqlHelper.cs" />
+    <Compile Include="DataAccess\IDataAccessor.cs" />
+    <Compile Include="DataAccess\DataAccessor.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ORM\Attribute\FieldAttribute.cs" />
+    <Compile Include="ORM\Attribute\TableAttribute.cs" />
+    <Compile Include="ORM\Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
