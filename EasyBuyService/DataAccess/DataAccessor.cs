@@ -65,6 +65,7 @@ namespace EasyBuyService.DataAccess
                             }
                         }
                     }
+                    entityList.Add((TEntity)entity);
                 }
             }
         }
