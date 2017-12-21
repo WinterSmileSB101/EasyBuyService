@@ -186,9 +186,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ORM\Attribute\FieldAttribute.cs" />
-    <Compile Include="ORM\Attribute\TableAttribute.cs" />
+    <Compile Include="ORM\Attributes\FieldAttribute.cs" />
+    <Compile Include="ORM\Attributes\TableAttribute.cs" />
+    <Compile Include="ORM\Model\BaseModel.cs" />
+    <Compile Include="ORM\Model\Order.cs" />
+    <Compile Include="ORM\Model\OrderDetails.cs" />
+    <Compile Include="ORM\Model\OrderReview.cs" />
+    <Compile Include="ORM\Model\Product.cs" />
     <Compile Include="ORM\Model\User.cs" />
+    <Compile Include="ORM\Model\UserAddress.cs" />
+    <Compile Include="ORM\Model\UserWatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,10 +6,13 @@ using System.Web;
 
 namespace EasyBuyService.ORM.Model
 {
-    [Table("dbo.User","UserID")]
-    public class User
+    [Table("dbo.User","ID")]
+    public class User: BaseModel
     {
-        [Field("UserID","int",0)]
+        [Field("ID", "int", 0)]
+        public int ID { get; set; }
+
+        [Field("UserID","varchar",200)]
         public int UserID { get; set; }
 
         [Field("UserName", "nvarchar", 50)]

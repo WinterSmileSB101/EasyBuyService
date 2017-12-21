@@ -7,12 +7,12 @@ using System.Web;
 namespace EasyBuyService.ORM.Model
 {
     [Table("dbo.UserAddress","ID")]
-    public class UserAddress
+    public class UserAddress: BaseModel
     {
         [Field("ID", "int", 0)]
         public int ID { get; set; }
 
-        [Field("UserID", "int", 0)]
+        [Field("UserID", "varchar", 200)]
         public int UserID { get; set; }
 
         [Field("CustomerName", "nvarchar", 50)]
