@@ -13,9 +13,9 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("OrderID", "varchar", 20)]
-        public int OrderID { get; set; }
+        public string OrderID { get; set; }
 
         [Field("ProductID", "varchar", 20)]
-        public int ProductID { get; set; }
+        public string ProductID { get; set; }
     }
 }

@@ -13,18 +13,21 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("CategoryID", "varchar", 20)]
-        public int CategoryID { get; set; }
+        public string CategoryID { get; set; }
 
         [Field("Enable", "bit", 0)]
-        public int Enable { get; set; }
+        public bool Enable { get; set; }
 
         [Field("CategoryName", "nvarchar", 30)]
-        public int CategoryName { get; set; }
+        public string CategoryName { get; set; }
 
         [Field("CategoryDescription", "nvarchar", 500)]
-        public int CategoryDescription { get; set; }
+        public string CategoryDescription { get; set; }
 
         [Field("ParentCategoryID", "varchar", 20)]
-        public int ParentCategoryID { get; set; }
+        public string ParentCategoryID { get; set; }
+
+        [Field("Priority", "int", 0)]
+        public int Priority { get; set; }
     }
 }

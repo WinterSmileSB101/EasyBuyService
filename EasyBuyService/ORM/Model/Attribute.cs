@@ -13,12 +13,12 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("AttributeID", "varchar", 20)]
-        public int AttributeID { get; set; }
+        public string AttributeID { get; set; }
 
         [Field("AttributeName", "nvarchar", 20)]
-        public int AttributeName { get; set; }
+        public string AttributeName { get; set; }
 
         [Field("AttributeDescription", "nvarchar", 50)]
-        public int AttributeDescription { get; set; }
+        public string AttributeDescription { get; set; }
     }
 }

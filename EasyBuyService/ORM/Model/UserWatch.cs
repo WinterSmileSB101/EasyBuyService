@@ -13,10 +13,10 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("UserID", "varchar", 200)]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [Field("WatchID", "varchar", 200)]
-        public int WatchID { get; set; }
+        public string WatchID { get; set; }
 
         [Field("WatchID", "int", 0)]
         public int WatchType { get; set; }

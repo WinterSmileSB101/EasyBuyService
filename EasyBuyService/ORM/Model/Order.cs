@@ -13,13 +13,13 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("OrderID", "varchar", 20)]
-        public int OrderID { get; set; }
+        public string OrderID { get; set; }
 
         [Field("OrderState", "int", 0)]
         public int OrderState { get; set; }
 
         [Field("CostomerID", "varchar", 200)]
-        public int CostomerID { get; set; }
+        public string CostomerID { get; set; }
 
         [Field("OrderTotal", "int", 0)]
         public int OrderTotal { get; set; }
@@ -28,9 +28,9 @@ namespace EasyBuyService.ORM.Model
         public int Discount { get; set; }
 
         [Field("PayCostomerID", "varchar", 200)]
-        public int PayCostomerID { get; set; }
+        public string PayCostomerID { get; set; }
 
         [Field("Comment", "nvarchar", 9999)]
-        public int Comment { get; set; }
+        public string Comment { get; set; }
     }
 }

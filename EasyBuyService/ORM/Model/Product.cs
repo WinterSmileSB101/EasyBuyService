@@ -13,16 +13,16 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("ProductID", "varchar", 20)]
-        public int ProductID { get; set; }
+        public string ProductID { get; set; }
 
         [Field("ProductName", "nvarchar", 50)]
-        public int ProductName { get; set; }
+        public string ProductName { get; set; }
 
         [Field("ImageUrl", "nvarchar", 100)]
-        public int ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
 
         [Field("ImageName", "varchar", 9999)]
-        public int ImageName { get; set; }
+        public string ImageName { get; set; }
 
         [Field("ImagePosition", "int", 0)]
         public int ImagePosition { get; set; }
@@ -34,19 +34,19 @@ namespace EasyBuyService.ORM.Model
         public int ItemType { get; set; }
 
         [Field("CategoryID", "varchar", 20)]
-        public int CategoryID { get; set; }
+        public string CategoryID { get; set; }
 
         [Field("IsPublish", "bit", 0)]
-        public int IsPublish { get; set; }
+        public bool IsPublish { get; set; }
 
         [Field("Priority", "int", 0)]
         public int Priority { get; set; }
 
         [Field("Description", "nvarchar", 100)]
-        public int Description { get; set; }
+        public string Description { get; set; }
 
         [Field("DetailDescription", "nvarchar", 9999)]
-        public int DetailDescription { get; set; }
+        public string DetailDescription { get; set; }
 
         [Field("OriginalPrice", "int", 0)]
         public int OriginalPrice { get; set; }

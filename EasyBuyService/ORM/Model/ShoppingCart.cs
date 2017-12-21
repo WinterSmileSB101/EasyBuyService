@@ -13,21 +13,21 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("AttributeID", "varchar", 20)]
-        public int AttributeID { get; set; }
+        public string AttributeID { get; set; }
 
         [Field("ProductID", "varchar", 20)]
-        public int ProductID { get; set; }
+        public string ProductID { get; set; }
 
         [Field("AttributeValue", "nvarchar", 500)]
-        public int AttributeValue { get; set; }
+        public string AttributeValue { get; set; }
 
         [Field("UserID", "varchar", 200)]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [Field("ProductNumber", "int", 0)]
         public int ProductNumber { get; set; }
 
         [Field("VendorID", "varchar", 200)]
-        public int VendorID { get; set; }
+        public string VendorID { get; set; }
     }
 }

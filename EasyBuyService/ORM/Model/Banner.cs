@@ -13,18 +13,18 @@ namespace EasyBuyService.ORM.Model
         public int ID { get; set; }
 
         [Field("Link", "nvarchar", 100)]
-        public int Link { get; set; }
+        public string Link { get; set; }
 
         [Field("ImageUrl", "nvarchar", 100)]
-        public int ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
 
         [Field("StartTime", "datetime", 0)]
-        public int StartTime { get; set; }
+        public DateTime? StartTime { get; set; }
 
         [Field("ExprieTime", "datetime", 0)]
-        public int ExprieTime { get; set; }
+        public DateTime? ExprieTime { get; set; }
 
         [Field("BriefDescription", "nvarchar", 50)]
-        public int BriefDescription { get; set; }
+        public string BriefDescription { get; set; }
     }
 }
