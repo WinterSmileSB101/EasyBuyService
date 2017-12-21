@@ -188,11 +188,16 @@
     </Compile>
     <Compile Include="ORM\Attributes\FieldAttribute.cs" />
     <Compile Include="ORM\Attributes\TableAttribute.cs" />
+    <Compile Include="ORM\Model\Banner.cs" />
+    <Compile Include="ORM\Model\Category.cs" />
+    <Compile Include="ORM\Model\ProductAttribute.cs" />
     <Compile Include="ORM\Model\BaseModel.cs" />
     <Compile Include="ORM\Model\Order.cs" />
     <Compile Include="ORM\Model\OrderDetails.cs" />
     <Compile Include="ORM\Model\OrderReview.cs" />
     <Compile Include="ORM\Model\Product.cs" />
+    <Compile Include="ORM\Model\Attribute.cs" />
+    <Compile Include="ORM\Model\ShoppingCart.cs" />
     <Compile Include="ORM\Model\User.cs" />
     <Compile Include="ORM\Model\UserAddress.cs" />
     <Compile Include="ORM\Model\UserWatch.cs" />
