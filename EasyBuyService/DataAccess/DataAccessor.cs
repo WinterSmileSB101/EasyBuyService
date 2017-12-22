@@ -13,6 +13,7 @@ namespace EasyBuyService.DataAccess
 
         #region fields
         private static string SELECT = "SELECT * FROM";
+        private static string UPDATE = "UPDATE @TableName SET @SetProperty Where @Where";
         #endregion
 
         public DataAccessor()
@@ -27,6 +28,8 @@ namespace EasyBuyService.DataAccess
 
         public List<TEntity> Query<TEntity>(string condition) where TEntity : class, new()
         {
+            #region reflect
+            /*
             using (var conn = SqlHelper.Instance.GetConnection())
             {
                 List<TEntity> entityList = new List<TEntity>();
@@ -67,7 +70,35 @@ namespace EasyBuyService.DataAccess
                     }
                     entityList.Add((TEntity)entity);
                 }
+                return entityList;
             }
+            */
+            #endregion
+
+            #region through SqlHelper
+            using (var conn = SqlHelper.Instance.GetConnection())
+            {
+                List<TEntity> entityList = new List<TEntity>();
+                //获取泛型的类型
+                Type type = typeof(TEntity);
+                //获取表的名称
+                object[] tableNames = type.GetCustomAttributes(typeof(TableAttribute), false);
+                if (tableNames != null)
+                {
+                    //通过这种方式替换，可以防止 sql 注入
+                    UPDATE = String.Format(SELECT + " {0} WHERE", ((TableAttribute)tableNames[0]).TableName);
+                }
+                else
+                {
+                    //报错信息
+                    return null;
+                }
+                List<SqlParameter> paras = new List<SqlParameter>();
+                paras.Add(new SqlParameter("@Where", condition));
+                return SqlHelper.Instance.ExecuteScalar<List<TEntity>>(SELECT, paras);
+            }
+
+            #endregion
         }
 
         public int Create<TEntity>(TEntity entity) where TEntity : class
@@ -78,8 +109,18 @@ namespace EasyBuyService.DataAccess
 
         public int Update<TEntity>(TEntity entity) where TEntity : class
         {
-            // TODO: Implement this method
-            throw new NotImplementedException();
+            #region through SqlHelper
+            using (var conn = SqlHelper.Instance.GetConnection())
+            {
+                List<TEntity> entityList = new List<TEntity>();
+                //获取泛型的类型
+                Type type = typeof(TEntity);
+                List<SqlParameter> paras = new List<SqlParameter>();
+                //获取表的名称
+                object[] tableNames = type.GetCustomAttributes(typeof(TableAttribute), false);
+            }
+            return 0;
+            #endregion
         }
 
         public int Delete<TEntity>(TEntity entity) where TEntity : class
